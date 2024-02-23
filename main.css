@@ -4,12 +4,28 @@
 	box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
 }
-
+:root{
+	--header-bg-cl: #f8f8f8f8;
+	--font-cl-white: #ffffff;
+	--font-cl-blck: #000000;
+	--color-bg-main: #ffffff;
+	--color-switcher: #000000;
+}
+.darkstyle{
+	--header-bg-cl: #f8f8f8f8;
+	--font-cl-white: #000000;
+	--font-cl-blck: #ffffff;
+	--color-bg-main: #000000;
+	--color-switcher: #ffffff;
+}
+body{
+	background-color:var(--color-bg-main);
+}
 .header-container{
 	display: flex;
 	width: 100%;
 	padding: 104px 133px 168px 133px;
-	background-color: #F8F8F8;
+	background-color: var(--header-bg-cl);
 }
 .header-title{
 	margin-bottom: 53px;
@@ -36,7 +52,7 @@
 	width: 278px;
 	height: 82px;
 	background-color: black;
-	color: white;
+	color: var(--font-cl-white);
 	font-size: 32px;
 	line-height: 82px;
 	text-decoration: none;
@@ -77,7 +93,7 @@
 	justify-content: center;
 	width: 417px;
 	height: 630px;
-	background-color: #F8F8F8;
+	background-color: var(--header-bg-cl);
 	margin-bottom: 67px;
 }
 .item-title{
@@ -121,4 +137,24 @@
 	text-decoration: none;
 	color: black;
 	font-size: 28px;
+}
+
+.main{
+	background-color: var(--color-bg-main);
+	color: var(--font-cl-blck);
+}
+.dark-wrapper{
+	margin-top: -5%;
+	width: 40px;
+	height: 40px;
+	margin-left: 50px;
+	background-color: var(--header-bg-cl);
+}
+.button-dark{
+	border: none;
+	background-color: var(--header-bg-cl);
+
+}
+.dark-icon{
+	width: 100%;
 }
