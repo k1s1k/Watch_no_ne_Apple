@@ -5,18 +5,17 @@
     font-family: 'League Spartan', sans-serif;
 }
 :root{
-	--header-bg-cl: #f8f8f8f8;
+	--header-bg-cl: rgba(196, 190, 190, 0.97);
 	--font-cl-white: #ffffff;
 	--font-cl-blck: #000000;
 	--color-bg-main: #ffffff;
-	--color-switcher: #000000;
+	--bytton-by-cl: #000000;
 }
 .darkstyle{
-	--header-bg-cl: #f8f8f8f8;
 	--font-cl-white: #000000;
 	--font-cl-blck: #ffffff;
-	--color-bg-main: #000000;
-	--color-switcher: #ffffff;
+	--color-bg-main: #030303;
+	--bytton-by-cl: #ffffff;
 }
 body{
 	background-color:var(--color-bg-main);
@@ -51,7 +50,7 @@ body{
 	display: block;
 	width: 278px;
 	height: 82px;
-	background-color: black;
+	background-color: var(--bytton-by-cl);
 	color: var(--font-cl-white);
 	font-size: 32px;
 	line-height: 82px;
@@ -119,6 +118,7 @@ body{
 	margin: 0 auto;
 	width: 417px;
 	margin-bottom: 85px;
+	color: var(--font-cl-blck)
 }
 .footer-discription-items{
 	text-align: center;
@@ -126,16 +126,18 @@ body{
 	line-height: 60px;
 	margin-bottom: 58px;
 	font-weight: 400;
+	color: var(--font-cl-blck)
 }
 .footer-discription{
 	text-align: center;
 	font-size: 24px;
 	line-height: 40px;
 	font-weight: 300;
+	color: var(--font-cl-blck)
 }
 .footer-link{
 	text-decoration: none;
-	color: black;
+	color: var(--font-cl-blck);
 	font-size: 28px;
 }
 
